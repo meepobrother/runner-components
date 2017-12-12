@@ -83,7 +83,6 @@ function parserForArrayFormat(opts) {
                     accumulator[key] = value;
                     return;
                 }
-
                 accumulator[key] = [].concat(accumulator[key], value);
             };
     }

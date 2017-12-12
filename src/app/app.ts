@@ -1,5 +1,7 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { FormsModule } from '@angular/forms';
+
 import {
     AppCitys, AppCoach, AppField, AppJoin, AppSetting, AppStar,
     CoachService
@@ -13,7 +15,8 @@ import { FoxModule } from 'imeepos-foxui';
     ],
     imports: [
         CommonModule,
-        FoxModule
+        FoxModule,
+        FormsModule
     ],
     exports: [
         AppCitys, AppCoach, AppField, AppJoin, AppSetting, AppStar,
