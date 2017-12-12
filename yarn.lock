@@ -81,11 +81,11 @@
   version "0.0.30"
   resolved "https://registry.yarnpkg.com/@types/strip-json-comments/-/strip-json-comments-0.0.30.tgz#9aa30c04db212a9a0649d6ae6fd50accc40748a1"
 
-"@types/v8flags@types/npm-v8flags#de224ae1cd5fd7dbb4e7158a6cc7a29e5315930d":
+"@types/v8flags@github:types/npm-v8flags#de224ae1cd5fd7dbb4e7158a6cc7a29e5315930d":
   version "2.0.0"
   resolved "https://codeload.github.com/types/npm-v8flags/tar.gz/de224ae1cd5fd7dbb4e7158a6cc7a29e5315930d"
 
-"@types/yn@types/npm-yn#ca75f6c82940fae6a06fb41d2d37a6aa9b4ea8e9":
+"@types/yn@github:types/npm-yn#ca75f6c82940fae6a06fb41d2d37a6aa9b4ea8e9":
   version "2.0.0"
   resolved "https://codeload.github.com/types/npm-yn/tar.gz/ca75f6c82940fae6a06fb41d2d37a6aa9b4ea8e9"
 
@@ -777,8 +777,8 @@ image-size@~0.5.0:
   resolved "https://registry.yarnpkg.com/image-size/-/image-size-0.5.5.tgz#09dfd4ab9d20e29eb1c3e80b8990378df9e3cb9c"
 
 imeepos-foxui@^1.0.1:
-  version "1.0.1"
-  resolved "https://registry.yarnpkg.com/imeepos-foxui/-/imeepos-foxui-1.0.1.tgz#10762d31ea3f3c89eee9c6572cc408e0848b14c0"
+  version "1.0.5"
+  resolved "https://registry.yarnpkg.com/imeepos-foxui/-/imeepos-foxui-1.0.5.tgz#25bd9261c3a981190f930f25e39195c14c324c47"
   dependencies:
     "@angular/common" "^5.1.0"
     "@angular/core" "^5.1.0"
