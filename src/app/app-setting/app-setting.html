@@ -1,0 +1,40 @@
+<div class="weui-cells" style="margin: 0px;">
+    <a class="weui-cell weui-cell_access" href="javascript:;" foxPickerTime (foxPickerTimeChange)="foxPickerTimeChangeStart($event)">
+        <div class="weui-cell__bd">
+            <p>开始时间</p>
+        </div>
+        <div class="weui-cell__ft">{{coach$.widget.time.start.label || '请选择'}}</div>
+    </a>
+    <a class="weui-cell weui-cell_access" href="javascript:;" foxPickerTime (foxPickerTimeChange)="foxPickerTimeChangeEnd($event)">
+        <div class="weui-cell__bd">
+            <p>结束时间</p>
+        </div>
+        <div class="weui-cell__ft">{{coach$.widget.time.end.label || '请选择'}}</div>
+    </a>
+    <!-- <a class="weui-cell weui-cell_access" href="javascript:;" foxPickerTimeLen (foxPickerTimeLenChange)="foxPickerTimeLenChange($event)">
+        <div class="weui-cell__bd">
+            <p>时长周期</p>
+        </div>
+        <div class="weui-cell__ft">{{coach$.widget.timeLen || '请选择'}}</div>
+    </a> -->
+    <div class="weui-cell">
+        <div class="weui-cell__bd">
+            <input class="weui-input" [(ngModel)]="coach$.widget.detail.title" type="text" placeholder="请输入标题">
+        </div>
+    </div>
+    <div class="weui-cell">
+        <div class="weui-cell__bd">
+            <textarea class="weui-textarea" [(ngModel)]="coach$.widget.detail.desc" placeholder="请输入简介" rows="3"></textarea>
+            <div class="weui-textarea-counter"><span>0</span>/200</div>
+        </div>
+    </div>
+</div>
+
+<div class="weui-btn-area">
+    <a class="weui-btn weui-btn_primary" *ngIf="!loading" (click)="save()" href="javascript:">
+        {{btn_title}}
+    </a>
+    <a class="weui-btn weui-btn_primary" *ngIf="loading" disabled (click)="save()" href="javascript:">
+        <i class="weui-loading"></i> {{btn_title}}
+    </a>
+</div>

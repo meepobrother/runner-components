@@ -1,6 +1,28 @@
-import { version } from './version';
-export { version } from './version';
+import { NgModule } from '@angular/core';
+import { CommonModule } from '@angular/common';
+import {
+    AppCitys, AppCoach, AppField, AppJoin, AppSetting, AppStar,
+    CoachService
+} from './public_api';
 
-import { welcome } from './welcome';
-export { welcome } from './welcome';
+import { FoxModule } from 'imeepos-foxui';
 
+@NgModule({
+    declarations: [
+        AppCitys, AppCoach, AppField, AppJoin, AppSetting, AppStar
+    ],
+    imports: [
+        CommonModule,
+        FoxModule
+    ],
+    exports: [
+        AppCitys, AppCoach, AppField, AppJoin, AppSetting, AppStar,
+        FoxModule
+    ],
+    providers: [
+        CoachService
+    ],
+})
+export class MeepoComponentsModule { }
+
+export * from './public_api';
