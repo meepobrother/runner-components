@@ -1,5 +1,5 @@
-import * as queryString from 'query-string';
-const parsed = queryString.parse(location.search);
+import { parse } from './query-string';
+const parsed = parse(location.search, {});
 
 export const defaultCoach: any = {
     avatar: 'http://meepo.com.cn/addons/imeepos_runnerpro/icon.jpg',
