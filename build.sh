@@ -1,15 +1,10 @@
 #!/usr/bin/env bash
 readonly currentDir=$(cd $(dirname $0); pwd)
 cd ${currentDir}
+yarn add imeepos-foxui
 rm -rf publish
 cp -r src/app src/.tmp/
-
 node ./style.js
-node ./style.js
-node ./style.js
-node ./style.js
-
-
 
 echo 'Compiling to es2015 via Angular compiler'
 $(npm bin)/ngc -p tsconfig-build.json -t es2015 --outDir publish-es2015/src
